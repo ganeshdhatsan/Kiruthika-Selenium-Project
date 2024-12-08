@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="15" total="16" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[usernameCRNElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[Entered the cmTest.Automate in the usernameCRN textbox successfully]]>
+    </line>
+    <line>
+      <![CDATA[passwordCRNElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[Entered the P@ssword123 in the passwordCRN textbox successfully]]>
+    </line>
+    <line>
+      <![CDATA[letsdothisCRNElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[letsdothisCRNElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on letsdothisCRN element successfully]]>
+    </line>
+    <line>
+      <![CDATA[CRN Login is done successfully]]>
+    </line>
+    <line>
+      <![CDATA[redeploymentAskACoachMenuIconElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on redeploymentAskACoachMenuIcon element successfully]]>
+    </line>
+    <line>
+      <![CDATA[RedeploymentAskACoachPage is displayed]]>
+    </line>
+    <line>
+      <![CDATA[redeploymentAskACoachScheduleElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[redeploymentAskACoachScheduleElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[redeploymentAskACoachScheduleElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[redeploymentAskACoachScheduleElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[redeploymentTypeTopicElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[Entered the TestForAskACoachCM in the redeploymentTypeTopic textbox successfully]]>
+    </line>
+    <line>
+      <![CDATA[redeploymentSelectYourCoachElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[firstCoachElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[selectyourDateAndTimeButtonElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[selectyourDateAndTimeButtonElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[redeploymentScheduleMeetingDateFieldElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[timeFieldElement is found successfully]]>
+    </line>
+    <line>
+      <![CDATA[Time slots are presented within 30 minutes increment]]>
+    </line>
+    <line>
+      <![CDATA[Time slots are presented within 30 minutes increment]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-10-07T19:03:22 IST" name="Default suite" finished-at="2021-10-07T19:05:21 IST" duration-ms="118708">
+    <groups>
+    </groups>
+    <test started-at="2021-10-07T19:03:22 IST" name="Default test" finished-at="2021-10-07T19:05:21 IST" duration-ms="118708">
+      <class name="com.lhh.test.redeploymentPhase2.RedeploymentAskACoachPhase2Tests">
+        <test-method is-config="true" signature="preTestActions()[pri:0, instance:com.lhh.test.redeploymentPhase2.RedeploymentAskACoachPhase2Tests@fb9c7aa]" started-at="2021-10-07T19:03:22 IST" name="preTestActions" finished-at="2021-10-07T19:03:22 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preTestActions -->
+        <test-method is-config="true" signature="initiateApplication(java.lang.reflect.Method)[pri:0, instance:com.lhh.test.redeploymentPhase2.RedeploymentAskACoachPhase2Tests@fb9c7aa]" started-at="2021-10-07T19:03:22 IST" name="initiateApplication" finished-at="2021-10-07T19:04:11 IST" duration-ms="48171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lhh.test.redeploymentPhase2.RedeploymentAskACoachPhase2Tests.TC_57986_verifyMeetingTimeSlotIsPresentedBy30MinutesTimeSlot() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateApplication -->
+        <test-method signature="TC_57986_verifyMeetingTimeSlotIsPresentedBy30MinutesTimeSlot()[pri:0, instance:com.lhh.test.redeploymentPhase2.RedeploymentAskACoachPhase2Tests@fb9c7aa]" started-at="2021-10-07T19:04:11 IST" name="TC_57986_verifyMeetingTimeSlotIsPresentedBy30MinutesTimeSlot" description="Verify that Meeting Time Slots are presented in 30 minute increments and Appointment Time booked on Calendar is 45 minutes" finished-at="2021-10-07T19:05:20 IST" duration-ms="69506" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[usernameCRNElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[Entered the cmTest.Automate in the usernameCRN textbox successfully]]>
+            </line>
+            <line>
+              <![CDATA[passwordCRNElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[Entered the P@ssword123 in the passwordCRN textbox successfully]]>
+            </line>
+            <line>
+              <![CDATA[letsdothisCRNElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[letsdothisCRNElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on letsdothisCRN element successfully]]>
+            </line>
+            <line>
+              <![CDATA[CRN Login is done successfully]]>
+            </line>
+            <line>
+              <![CDATA[redeploymentAskACoachMenuIconElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on redeploymentAskACoachMenuIcon element successfully]]>
+            </line>
+            <line>
+              <![CDATA[RedeploymentAskACoachPage is displayed]]>
+            </line>
+            <line>
+              <![CDATA[redeploymentAskACoachScheduleElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[redeploymentAskACoachScheduleElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[redeploymentAskACoachScheduleElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[redeploymentAskACoachScheduleElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[redeploymentTypeTopicElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[Entered the TestForAskACoachCM in the redeploymentTypeTopic textbox successfully]]>
+            </line>
+            <line>
+              <![CDATA[redeploymentSelectYourCoachElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[firstCoachElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[selectyourDateAndTimeButtonElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[selectyourDateAndTimeButtonElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[redeploymentScheduleMeetingDateFieldElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[timeFieldElement is found successfully]]>
+            </line>
+            <line>
+              <![CDATA[Time slots are presented within 30 minutes increment]]>
+            </line>
+            <line>
+              <![CDATA[Time slots are presented within 30 minutes increment]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_57986_verifyMeetingTimeSlotIsPresentedBy30MinutesTimeSlot -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.lhh.test.redeploymentPhase2.RedeploymentAskACoachPhase2Tests@fb9c7aa]" started-at="2021-10-07T19:05:20 IST" name="closeApplication" finished-at="2021-10-07T19:05:21 IST" duration-ms="919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:com.lhh.test.redeploymentPhase2.RedeploymentAskACoachPhase2Tests@fb9c7aa]" started-at="2021-10-07T19:05:21 IST" name="tearDownBrowser" finished-at="2021-10-07T19:05:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+      </class> <!-- com.lhh.test.redeploymentPhase2.RedeploymentAskACoachPhase2Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

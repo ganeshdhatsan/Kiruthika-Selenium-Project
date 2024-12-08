@@ -1,0 +1,225 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.niit-tech</groupId>
+	<artifactId>LHHAutomationFramework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>LHHAutomationFramework</name>
+	<description>Automation framework developed using WebDriver
+	</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8
+		</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<testng.version>7.1.0</testng.version>
+		<suite.file1>src/test/resources/testsuite/testng_Regression.xml</suite.file1>
+		<suite.file2>src/test/resources/testsuite/testng_FirewallChangeSanity.xml</suite.file2>
+		<suite.file3>src/test/resources/testsuite/testng_DailyHealthChecker.xml</suite.file3>
+		<suite.file4>src/test/resources/testsuite/testng_SmokeTestSuite.xml</suite.file4>
+		<suite.file5>src/test/resources/testsuite/testng_ServerPatch.xml</suite.file5>
+		<suite.file6>src/test/resources/testsuite/testng_Amazon_Regression.xml</suite.file6>
+		<suite.file7>src/test/resources/testsuite/testng_MS_Regression.xml</suite.file7>
+		<suite.file8>src/test/resources/testsuite/testng_OFC_Regression.xml</suite.file8>
+		<suite.file9>src/test/resources/testsuite/testng_Redeployment_Regression.xml</suite.file9>
+		<seleniumversion>3.141.59</seleniumversion>
+		<log4j.version>2.13.1</log4j.version>
+		<faker.version>1.0.2</faker.version>
+		<fabricator.version>2.1.6</fabricator.version>
+		<report.version>5.0.1</report.version>
+	</properties>
+
+	<!-- Build Part -->
+	<build>
+		<defaultGoal>install</defaultGoal>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-plugins</artifactId>
+				<version>22</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>2.5</version>
+
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.20</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<reuseForks>false</reuseForks>
+					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+					<argLine>-Dfile.encoding=UTF-8</argLine>
+					<useSystemClassLoader>false</useSystemClassLoader>
+
+					<suiteXmlFiles>
+						<suiteXmlFile>${suite.file1}</suiteXmlFile>
+						<suiteXmlFile>${suite.file2}</suiteXmlFile>
+						<suiteXmlFile>${suite.file3}</suiteXmlFile>
+						<suiteXmlFile>${suite.file4}</suiteXmlFile>
+						<suiteXmlFile>${suite.file5}</suiteXmlFile>
+						<suiteXmlFile>${suite.file6}</suiteXmlFile>
+						<suiteXmlFile>${suite.file7}</suiteXmlFile>
+						<suiteXmlFile>${suite.file8}</suiteXmlFile>
+						<suiteXmlFile>${suite.file9}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<organization>
+		<name>NIIT-TECH</name>
+	</organization>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20180813</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.5</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>26.0-jre</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>4.0.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sourceforge.jtds</groupId>
+			<artifactId>jtds</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>${faker.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.azakordonets</groupId>
+			<artifactId>fabricator_2.12</artifactId>
+			<version>${fabricator.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>${report.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>5.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.14</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.deque</groupId>
+			<artifactId>axe-selenium</artifactId>
+			<version>3.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.percy</groupId>
+			<artifactId>percy-java-selenium</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+
+</project>
